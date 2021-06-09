@@ -19,7 +19,7 @@ Output: 6
 Explanation: Cheapest is: start on cost[0], and only step on 1s, skipping cost[3].
 
 """
-
+from typing import List
 
 class Solution:
     def minCostClimbingStairs(self, cost: List[int]) -> int:
