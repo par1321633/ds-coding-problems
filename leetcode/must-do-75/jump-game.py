@@ -29,7 +29,7 @@ class Solution:
                 return False
         print (max_l)
         return max_l >= len(nums) - 1
-    
+
 
 nums = [0,2,3]
 print ("Input - {}".format(nums))
