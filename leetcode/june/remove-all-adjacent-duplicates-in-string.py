@@ -41,6 +41,16 @@ class Solution:
             return ''
         return s
 
+class Solution2:
+    def removeDuplicates(self, s):
+        stack = []
+        for symb in s:
+            if stack and stack[-1] == symb:
+                stack.pop()
+            else:
+                stack.append(symb)
+        return "".join(stack)
+
 
 s = "aaaaaaaaa"
 print ("Input - s: {}".format(s))

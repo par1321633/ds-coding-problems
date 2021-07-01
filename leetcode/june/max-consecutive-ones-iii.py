@@ -28,19 +28,15 @@ class Solution:
         index_zeros = []
         val = max_val = 0
         for index, value in enumerate(nums):
-            # print (val, index, index_zeros, max_val)
             if value == 0:
                 index_zeros.append(index)
                 if len(index_zeros) - k > 0:
-                    # print ("POPED", val,  index_zeros)
                     v = index_zeros[len(index_zeros) - 1 - k]
                     val = index - v - 1
-                    # print ("val", val, v)
             val = val + 1
 
             if val > max_val:
                 max_val = val
-        # print (index_zeros)
         return max_val
 
 
